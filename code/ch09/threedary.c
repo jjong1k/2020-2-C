@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	// 3Â÷¿ø ¹è¿­ ÃÊ±âÈ­, Ã¹ ¹øÂ° Å©±â´Â ÁöÁ¤ÇÏÁö ¾Ê¤·¸£ ¼ö ÀÖÀ½
+	// 3ì°¨ì› ë°°ì—´ ì´ˆê¸°í™”, ì²« ë²ˆì§¸ í¬ê¸°ëŠ” ì§€ì •í•˜ì§€ ì•Š ìˆ˜ ìžˆìŒ
 	int score[][ROWSIZE][COLSIZE] = {
 		{ { 95, 85 },
 		  { 85, 83 },
@@ -20,13 +20,13 @@ int main(void)
 
 	for (int i = 0; i < 2; i++)
 	{
-		if (i == 0) printf("[°­ÁÂ 1]");
-		else printf("[°­ÁÂ 2]");
-		printf("%11s%7s\n", "Áß°£", "±â¸»");
+		if (i == 0) printf("[ê°•ì¢Œ 1]");
+		else printf("[ê°•ì¢Œ 2]");
+		printf("%11s%7s\n", "ì¤‘ê°„", "ê¸°ë§");
 
 		for (int j = 0; j < ROWSIZE; j++)
 		{
-			printf("%10s%2d", "ÇÐ»ý", j + 1);
+			printf("%10s%2d", "í•™ìƒ", j + 1);
 			for (int k = 0; k < COLSIZE; k++)
 				printf("%6d ", score[i][j][k]);
 			printf("\n");
